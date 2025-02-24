@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veldora Hotel</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="https://cdn.dribbble.com/users/13877915/screenshots/19919784/media/9070afebd8d300dab133f0102fe89020.jpg?resize=400x300&vertical=center" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <img alt="Illustration of a colorful bird with flowers" height="300" src="vel.jpg" width="300" />
+      <h2>Book your escape.</h2>
+      <p>Start your journey with us, stay like never before. Veldora brings luxury and comfort to your fingertips.</p>
+    </div>
+    <div class="right">
+      <h1>Veldora</h1>
+      <h2 id="form-title">Welcome to Veldora</h2>
+      <form id="login-form">
+        <input placeholder="Username or Email" type="text" value="" />
+        <input placeholder="Password" type="password" value="" />
+        <div class="forgot-password">Forgot password?</div>
+        <button type="submit">Sign in</button>
+      </form>
+      <form id="signup-form" style="display: none;">
+        <input placeholder="Full Name" type="text" />
+        <input placeholder="Email" type="email" />
+        <input placeholder="Password" type="password" />
+        <input placeholder="Confirm Password" type="password" />
+        <button type="submit">Create Account</button>
+      </form>
+      <div id="toggle-form">
+        <div id="login-message" style="display: block;">
+          New to Veldora? <a href="#" onclick="toggleForms(event, 'signup')">Create Account</a>
+        </div>
+        <div id="signup-message" style="display: none;">
+          Already have an account? <a href="#" onclick="toggleForms(event, 'login')">Sign in</a>
+        </div>
+      </div>
+      <div id="continue-guest">
+        <a href="main.html" onclick="continueAsGuest(event)">Continue as a guest</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleForms(event, form) {
+      event.preventDefault();
+      const loginForm = document.getElementById('login-form');
+      const signupForm = document.getElementById('signup-form');
+      const loginMessage = document.getElementById('login-message');
+      const signupMessage = document.getElementById('signup-message');
+      const formTitle = document.getElementById('form-title');
+
+      if (form === 'signup') {
+        loginForm.style.display = 'none';
+        signupForm.style.display = 'block';
+        loginMessage.style.display = 'none';
+        signupMessage.style.display = 'block';
+        formTitle.textContent = 'Create Your Account';
+      } else {
+        loginForm.style.display = 'block';
+        signupForm.style.display = 'none';
+        loginMessage.style.display = 'block';
+        signupMessage.style.display = 'none';
+        formTitle.textContent = 'Welcome to Veldora';
+      }
+    }
+
+    function continueAsGuest(event) {
+      event.preventDefault();
+      window.location.href = "main.html"; 
+    }
+  </script>
+</body>
+</html>
