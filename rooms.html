@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veldora Hotel - Luxury Accommodations</title>
+  <title>Rooms & Suites | Veldora Hotel</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/rooms.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="icon" href="images/logo.png" type="image/png">
 </head>
@@ -21,8 +22,8 @@
       
       <nav class="main-nav">
         <ul>
-          <li><a href="main.html" class="active">Home</a></li>
-          <li><a href="rooms.html">Rooms & Suites</a></li>
+          <li><a href="main.html">Home</a></li>
+          <li><a href="rooms.html" class="active">Rooms & Suites</a></li>
           <li><a href="dining.html">Dining</a></li>
           <li><a href="spa.html">Spa</a></li>
           <li><a href="experience.html">Experiences</a></li>
@@ -45,102 +46,31 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-slider">
-      <div class="slide active" style="background-image: url('https://www.nainiretreat.niphospitality.com/gallery/1.jpg')">
-        <div class="slide-content">
-          <h1 class="slide-title">Luxury Redefined</h1>
-          <p class="slide-text">Experience unparalleled comfort in our exquisite rooms and suites</p>
-          <a href="rooms.html" class="btn-explore">Explore Rooms</a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url('https://media.istockphoto.com/id/1388791676/photo/teppanyaki-style.jpg?s=612x612&w=0&k=20&c=j2QXPUQapSE9221h9Hr7XOa5ywcuJUBl3xcv7a63LRE=')">
-        <div class="slide-content">
-          <h1 class="slide-title">Gourmet Dining</h1>
-          <p class="slide-text">Savor world-class cuisine at our award-winning restaurants</p>
-          <a href="#" class="btn-explore">Discover Dining</a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url('https://images.squarespace-cdn.com/content/v1/6447eeb38baf0c31deed937f/f6df5eac-2e70-447f-9608-174cabb1114b/image-asset.png')">
-        <div class="slide-content">
-          <h1 class="slide-title">Ultimate Relaxation</h1>
-          <p class="slide-text">Rejuvenate your senses at our luxury spa retreat</p>
-          <a href="#" class="btn-explore">Spa Treatments</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="slider-controls">
-      <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
-      <div class="slider-dots"></div>
-      <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
-    </div>
-    
-    <div class="booking-widget">
-      <form class="booking-form">
-        <div class="form-group">
-          <label for="check-in">Check In</label>
-          <input type="date" id="check-in">
-        </div>
-        <div class="form-group">
-          <label for="check-out">Check Out</label>
-          <input type="date" id="check-out">
-        </div>
-        <div class="form-group">
-          <label for="guests">Guests</label>
-          <select id="guests">
-            <option value="1">1 Guest</option>
-            <option value="2">2 Guests</option>
-            <option value="3">3 Guests</option>
-            <option value="4">4 Guests</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-check">Check Availability</button>
-      </form>
+  <!-- Rooms Hero -->
+  <section class="rooms-hero">
+    <div class="container">
+      <h1 class="fade-in">Rooms & Suites</h1>
+      <p class="fade-in delay-1">Experience luxury redefined in our exquisite accommodations</p>
     </div>
   </section>
 
-  <!-- Welcome Section -->
-  <section class="welcome-section">
+  <!-- Room Types -->
+  <section class="room-types">
     <div class="container">
-      <div class="welcome-content">
-        <h2 class="section-title">Welcome to Veldora</h2>
-        <p class="section-subtitle">Where luxury meets comfort</p>
-        <p class="welcome-text">
-          Nestled in the heart of the city, Veldora Hotel offers a sanctuary of sophistication and 
-          impeccable service. Our commitment to excellence ensures every stay is memorable, blending 
-          contemporary design with timeless elegance.
-        </p>
-        <div class="welcome-features">
-          <div class="feature-item">
-            <i class="fas fa-concierge-bell"></i>
-            <h3>24/7 Concierge</h3>
-            <p>Personalized service around the clock</p>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-wifi"></i>
-            <h3>High-Speed WiFi</h3>
-            <p>Complimentary throughout the hotel</p>
-          </div>
-          <div class="feature-item">
-            <i class="fas fa-swimming-pool"></i>
-            <h3>Infinity Pool</h3>
-            <p>With panoramic city views</p>
-          </div>
+      <div class="section-header">
+        <h2 class="section-title">Our Accommodations</h2>
+        <p class="section-subtitle">Tailored for your comfort</p>
+        <div class="room-filter">
+          <button class="filter-btn active" data-filter="all">All Rooms</button>
+          <button class="filter-btn" data-filter="room">Rooms</button>
+          <button class="filter-btn" data-filter="suite">Suites</button>
+          <button class="filter-btn" data-filter="premium">Premium</button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Rooms Section -->
-  <section class="rooms-section">
-    <div class="container">
-      <h2 class="section-title">Rooms & Suites</h2>
-      <p class="section-subtitle">Tailored for your comfort</p>
       
       <div class="rooms-grid">
-        <div class="room-card">
+        <!-- Deluxe Room -->
+        <div class="room-card room" data-category="room">
           <div class="room-image">
             <img src="images/room1.jpg" alt="Deluxe Room">
             <div class="room-badge">Most Popular</div>
@@ -163,7 +93,8 @@
           </div>
         </div>
         
-        <div class="room-card">
+        <!-- Executive Suite -->
+        <div class="room-card suite" data-category="suite">
           <div class="room-image">
             <img src="images/room2.jpg" alt="Executive Suite">
             <div class="room-badge">New</div>
@@ -186,7 +117,32 @@
           </div>
         </div>
         
-        <div class="room-card">
+        <!-- Premium Room -->
+        <div class="room-card premium" data-category="premium">
+          <div class="room-image">
+            <img src="images/room-premium.jpg" alt="Premium Room">
+            <div class="room-badge">Best Value</div>
+          </div>
+          <div class="room-details">
+            <h3>Premium Room</h3>
+            <p class="room-description">
+              Enhanced comfort with upgraded amenities and panoramic city views.
+            </p>
+            <div class="room-features">
+              <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+              <span><i class="fas fa-ruler-combined"></i> 50 m²</span>
+              <span><i class="fas fa-bed"></i> King Bed</span>
+            </div>
+            <div class="room-price">
+              <span class="price">$399</span>
+              <span class="per-night">/ night</span>
+              <a href="booking.html" class="btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Presidential Suite -->
+        <div class="room-card suite" data-category="suite">
           <div class="room-image">
             <img src="images/room3.jpg" alt="Presidential Suite">
           </div>
@@ -207,49 +163,119 @@
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="section-footer">
-        <a href="rooms.html" class="btn-view-all">View All Rooms</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dining Section -->
-  <section class="dining-section">
-    <div class="container">
-      <div class="dining-image">
-        <img src="images/dining.jpg" alt="Restaurant">
-      </div>
-      <div class="dining-content">
-        <h2 class="section-title">Gourmet Dining</h2>
-        <p class="section-subtitle">A culinary journey</p>
-        <p class="dining-text">
-          Our award-winning restaurants offer an exquisite culinary experience, featuring 
-          locally-sourced ingredients and innovative dishes crafted by our master chefs.
-        </p>
-        <div class="dining-options">
-          <div class="option">
-            <h3>The Terrace</h3>
-            <p>International cuisine with panoramic city views</p>
-            <span class="timing">7:00 AM - 11:00 PM</span>
+        
+        <!-- Junior Suite -->
+        <div class="room-card suite" data-category="suite">
+          <div class="room-image">
+            <img src="images/room-junior.jpg" alt="Junior Suite">
           </div>
-          <div class="option">
-            <h3>Azure</h3>
-            <p>Seafood specialties and fine wines</p>
-            <span class="timing">6:00 PM - 11:00 PM</span>
+          <div class="room-details">
+            <h3>Junior Suite</h3>
+            <p class="room-description">
+              Elegant suite with separate living area and luxurious bathroom.
+            </p>
+            <div class="room-features">
+              <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+              <span><i class="fas fa-ruler-combined"></i> 55 m²</span>
+              <span><i class="fas fa-bed"></i> King Bed</span>
+            </div>
+            <div class="room-price">
+              <span class="price">$599</span>
+              <span class="per-night">/ night</span>
+              <a href="booking.html" class="btn-book">Book Now</a>
+            </div>
           </div>
         </div>
-        <a href="#" class="btn-explore">Explore Dining Options</a>
+        
+        <!-- Superior Room -->
+        <div class="room-card room" data-category="room">
+          <div class="room-image">
+            <img src="images/room-superior.jpg" alt="Superior Room">
+          </div>
+          <div class="room-details">
+            <h3>Superior Room</h3>
+            <p class="room-description">
+              Comfortable accommodations with modern amenities and city views.
+            </p>
+            <div class="room-features">
+              <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+              <span><i class="fas fa-ruler-combined"></i> 40 m²</span>
+              <span><i class="fas fa-bed"></i> King or Twin Beds</span>
+            </div>
+            <div class="room-price">
+              <span class="price">$349</span>
+              <span class="per-night">/ night</span>
+              <a href="booking.html" class="btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
+  <!-- Room Features -->
+  <section class="room-features-section">
+    <div class="container">
+      <h2 class="section-title">Room Amenities</h2>
+      <p class="section-subtitle">Everything you need for a comfortable stay</p>
+      
+      <div class="features-grid">
+        <div class="feature-item slide-up">
+          <i class="fas fa-wifi"></i>
+          <h3>High-Speed WiFi</h3>
+          <p>Complimentary high-speed internet access throughout your stay</p>
+        </div>
+        
+        <div class="feature-item slide-up delay-1">
+          <i class="fas fa-tv"></i>
+          <h3>Smart TV</h3>
+          <p>55-inch flat-screen TV with streaming services and international channels</p>
+        </div>
+        
+        <div class="feature-item slide-up delay-2">
+          <i class="fas fa-coffee"></i>
+          <h3>Mini Bar</h3>
+          <p>Well-stocked mini bar with premium beverages and snacks</p>
+        </div>
+        
+        <div class="feature-item slide-up">
+          <i class="fas fa-snowflake"></i>
+          <h3>Climate Control</h3>
+          <p>Individual air conditioning and heating controls</p>
+        </div>
+        
+        <div class="feature-item slide-up delay-1">
+          <i class="fas fa-lock"></i>
+          <h3>In-Room Safe</h3>
+          <p>Electronic in-room safe for your valuables</p>
+        </div>
+        
+        <div class="feature-item slide-up delay-2">
+          <i class="fas fa-umbrella-beach"></i>
+          <h3>Bathrobes & Slippers</h3>
+          <p>Plush bathrobes and slippers for your comfort</p>
+        </div>
+        
+        <div class="feature-item slide-up">
+          <i class="fas fa-toiletries"></i>
+          <h3>Luxury Toiletries</h3>
+          <p>Premium bathroom amenities by our exclusive partner</p>
+        </div>
+        
+        <div class="feature-item slide-up delay-1">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>24/7 Room Service</h3>
+          <p>Round-the-clock dining options available</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
   <section class="testimonials-section">
     <div class="container">
       <h2 class="section-title">Guest Experiences</h2>
-      <p class="section-subtitle">What our guests say</p>
+      <p class="section-subtitle">What our guests say about our rooms</p>
       
       <div class="testimonials-slider">
         <div class="testimonial active">
@@ -262,8 +288,8 @@
               <i class="fas fa-star"></i>
             </div>
             <p class="testimonial-text">
-              "The Veldora Hotel exceeded all our expectations. The service was impeccable, 
-              the room was stunning, and the location couldn't be better. We'll definitely be back!"
+              "The Deluxe Room at Veldora exceeded all expectations. The bed was incredibly comfortable, 
+              and the city views were breathtaking. Housekeeping was impeccable throughout our stay."
             </p>
             <div class="guest-info">
               <img src="images/guest1.jpg" alt="Guest" class="guest-photo">
@@ -285,11 +311,11 @@
               <i class="fas fa-star"></i>
             </div>
             <p class="testimonial-text">
-              "From the moment we arrived, we were treated like royalty. The attention to detail 
-              and personalized service made our anniversary truly special. Highly recommend!"
+              "We stayed in the Presidential Suite for our anniversary and it was worth every penny. 
+              The space, the amenities, and the attention to detail made our celebration truly special."
             </p>
             <div class="guest-info">
-              <img src="images/guest2.jpeg" alt="Guest" class="guest-photo">
+              <img src="images/guest2.jpg" alt="Guest" class="guest-photo">
               <div class="guest-details">
                 <h4>Michael Chen</h4>
                 <span>London, UK</span>
@@ -308,8 +334,8 @@
               <i class="fas fa-star-half-alt"></i>
             </div>
             <p class="testimonial-text">
-              "The spa treatments were absolutely divine, and our suite had the most comfortable 
-              bed I've ever slept in. Perfect for a relaxing getaway after a long business trip."
+              "The Executive Suite provided the perfect balance of work and relaxation during my business trip. 
+              The separate living area was ideal for meetings, and the bed was incredibly comfortable."
             </p>
             <div class="guest-info">
               <img src="images/guest3.jpg" alt="Guest" class="guest-photo">
@@ -326,7 +352,7 @@
     </div>
   </section>
 
-  <!-- Newsletter Section -->
+  <!-- Newsletter -->
   <section class="newsletter-section">
     <div class="container">
       <div class="newsletter-content">
@@ -404,6 +430,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/rooms.js"></script>
   <script src="js/animations.js"></script>
 </body>
 </html>

@@ -1,0 +1,345 @@
+/* Dining Page Specific Styles */
+.dining-hero {
+    background: linear-gradient(rgba(7, 50, 70, 0.8), rgba(7, 50, 70, 0.8)), 
+                url('../images/dining-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+  }
+  
+  .dining-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dining-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  .restaurants-section {
+    padding: 80px 0;
+  }
+  
+  .restaurants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .restaurant-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .restaurant-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .restaurant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .restaurant-card:hover .restaurant-image img {
+    transform: scale(1.05);
+  }
+  
+  .restaurant-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  
+  .restaurant-details {
+    padding: 25px;
+  }
+  
+  .restaurant-details h3 {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+  }
+  
+  .cuisine-type {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .restaurant-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+  
+  .info-item i {
+    color: var(--secondary-color);
+  }
+  
+  .restaurant-description {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .restaurant-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .btn-menu {
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .btn-menu:hover {
+    background-color: var(--light-color);
+  }
+  
+  .btn-reserve {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .btn-reserve:hover {
+    background-color: #052435;
+    transform: translateY(-2px);
+  }
+  
+  .bars-section {
+    padding: 60px 0;
+    background-color: var(--light-color);
+  }
+  
+  .bars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .bar-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .bar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bar-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .bar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .bar-card:hover .bar-image img {
+    transform: scale(1.05);
+  }
+  
+  .bar-details {
+    padding: 25px;
+  }
+  
+  .bar-details h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .bar-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .bar-description {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .bar-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .bar-highlights span {
+    background-color: rgba(201, 179, 124, 0.1);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .experiences-section {
+    padding: 80px 0;
+  }
+  
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .experience-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .experience-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+  }
+  
+  .experience-card:hover .experience-image img {
+    transform: scale(1.05);
+  }
+  
+  .experience-details {
+    padding: 25px;
+  }
+  
+  .experience-details h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+  }
+  
+  .experience-details p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .experience-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+  }
+  
+  .experience-info i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+  }
+  
+  .btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .btn-learn-more:hover {
+    background-color: #052435;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dining-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .restaurant-actions {
+      flex-direction: column;
+    }
+    
+    .btn-menu,
+    .btn-reserve {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .dining-hero {
+      height: 250px;
+    }
+    
+    .dining-hero h1 {
+      font-size: 2rem;
+    }
+  }

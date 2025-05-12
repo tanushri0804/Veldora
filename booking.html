@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Stay | Veldora Hotel</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/booking.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/V_logo.jpg" alt="Veldora Logo">
+        <span>Veldora</span>
+      </div>
+      
+      <nav class="main-nav">
+        <ul>
+            <li><a href="main.html" class="active">Home</a></li>
+            <li><a href="rooms.html">Rooms & Suites</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="spa.html">Spa</a></li>
+            <li><a href="experience.html">Experiences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-actions">
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+        <a href="booking.html" class="btn-book">Book Now</a>
+        <div class="language-selector">
+          <span>EN</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+      
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Booking Hero -->
+  <section class="booking-hero">
+    <div class="container">
+      <h1>Book Your Stay</h1>
+      <p>Experience luxury redefined at Veldora Hotel</p>
+    </div>
+  </section>
+
+  <!-- Booking Process -->
+  <section class="booking-process">
+    <div class="container">
+      <div class="process-steps">
+        <div class="step active">
+          <span class="step-number">1</span>
+          <span class="step-name">Select Dates</span>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <span class="step-name">Choose Room</span>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <span class="step-name">Add Extras</span>
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <span class="step-name">Confirm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking-form-section">
+    <div class="container">
+      <div class="booking-form-container">
+        <form id="bookingForm">
+          <div class="form-section">
+            <h2>Your Stay Details</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="check-in">Check-In Date</label>
+                <input type="date" id="check-in" required>
+              </div>
+              <div class="form-group">
+                <label for="check-out">Check-Out Date</label>
+                <input type="date" id="check-out" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="adults">Adults</label>
+                <select id="adults" required>
+                  <option value="1">1 Adult</option>
+                  <option value="2" selected>2 Adults</option>
+                  <option value="3">3 Adults</option>
+                  <option value="4">4 Adults</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="children">Children</label>
+                <select id="children">
+                  <option value="0" selected>0 Children</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children</option>
+                  <option value="3">3 Children</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h2>Room Selection</h2>
+            <div class="room-options">
+              <div class="room-option">
+                <input type="radio" name="room-type" id="deluxe" value="deluxe" checked>
+                <label for="deluxe">
+                  <div class="room-image">
+                    <img src="images/room1.jpg" alt="Deluxe Room">
+                  </div>
+                  <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p class="room-description">Spacious accommodations with premium amenities and stunning city views.</p>
+                    <div class="room-features">
+                      <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                      <span><i class="fas fa-ruler-combined"></i> 45 m²</span>
+                      <span><i class="fas fa-bed"></i> King Bed</span>
+                    </div>
+                    <div class="room-price">
+                      <span class="price">$299</span>
+                      <span class="per-night">/ night</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              
+              <div class="room-option">
+                <input type="radio" name="room-type" id="executive" value="executive">
+                <label for="executive">
+                  <div class="room-image">
+                    <img src="images/room2.jpg" alt="Executive Suite">
+                  </div>
+                  <div class="room-info">
+                    <h3>Executive Suite</h3>
+                    <p class="room-description">Sophisticated living space with separate lounge area and premium amenities.</p>
+                    <div class="room-features">
+                      <span><i class="fas fa-user-friends"></i> 2 Guests</span>
+                      <span><i class="fas fa-ruler-combined"></i> 65 m²</span>
+                      <span><i class="fas fa-bed"></i> King Bed</span>
+                    </div>
+                    <div class="room-price">
+                      <span class="price">$499</span>
+                      <span class="per-night">/ night</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              
+              <div class="room-option">
+                <input type="radio" name="room-type" id="presidential" value="presidential">
+                <label for="presidential">
+                  <div class="room-image">
+                    <img src="images/room3.jpg" alt="Presidential Suite">
+                  </div>
+                  <div class="room-info">
+                    <h3>Presidential Suite</h3>
+                    <p class="room-description">Ultimate luxury with expansive space, premium furnishings and panoramic views.</p>
+                    <div class="room-features">
+                      <span><i class="fas fa-user-friends"></i> 4 Guests</span>
+                      <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                      <span><i class="fas fa-bed"></i> 2 King Beds</span>
+                    </div>
+                    <div class="room-price">
+                      <span class="price">$899</span>
+                      <span class="per-night">/ night</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h2>Special Requests</h2>
+            <div class="form-group">
+              <label for="requests">Any special requests? (Optional)</label>
+              <textarea id="requests" rows="4" placeholder="Please let us know if you have any special requirements..."></textarea>
+            </div>
+          </div>
+          
+          <div class="form-actions">
+            <button type="button" class="btn-back">Back</button>
+            <button type="submit" class="btn-continue">Continue to Payment</button>
+          </div>
+        </form>
+        
+        <div class="booking-summary">
+          <h2>Your Booking Summary</h2>
+          <div class="summary-dates">
+            <div class="date">
+              <span class="label">Check-In</span>
+              <span class="value" id="summary-checkin">--/--/----</span>
+            </div>
+            <div class="date">
+              <span class="label">Check-Out</span>
+              <span class="value" id="summary-checkout">--/--/----</span>
+            </div>
+            <div class="nights">
+              <span class="label">Nights</span>
+              <span class="value" id="summary-nights">0</span>
+            </div>
+          </div>
+          
+          <div class="summary-room">
+            <h3>Selected Room</h3>
+            <div class="room-selected" id="summary-room">
+              <p>No room selected yet</p>
+            </div>
+          </div>
+          
+          <div class="summary-price">
+            <div class="price-row">
+              <span class="label">Room Price</span>
+              <span class="value" id="summary-room-price">$0</span>
+            </div>
+            <div class="price-row">
+              <span class="label">Taxes & Fees</span>
+              <span class="value" id="summary-taxes">$0</span>
+            </div>
+            <div class="price-row total">
+              <span class="label">Total</span>
+              <span class="value" id="summary-total">$0</span>
+            </div>
+          </div>
+          
+          <div class="summary-policies">
+            <h3>Cancellation Policy</h3>
+            <p>Free cancellation up to 48 hours before check-in. After that, the first night will be charged.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Veldora</h2>
+      <p class="section-subtitle">Experience the difference</p>
+      
+      <div class="features-grid">
+        <div class="feature">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Flexible Cancellation</h3>
+          <p>Free cancellation up to 48 hours before your stay</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-medal"></i>
+          <h3>Best Price Guarantee</h3>
+          <p>Found a better price? We'll match it plus give you 10% off</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-concierge-bell"></i>
+          <h3>24/7 Concierge</h3>
+          <p>Our team is available around the clock to assist you</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-wifi"></i>
+          <h3>Free High-Speed WiFi</h3>
+          <p>Stay connected with complimentary high-speed internet</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/V_logo.jpg" alt="Veldora Logo">
+            <span>Veldora</span>
+          </div>
+          <p class="footer-about">
+            Veldora Hotel offers luxury accommodations with world-class amenities, 
+            exceptional service, and unforgettable experiences.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="rooms.html">Rooms & Suites</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Spa</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Avenue, City Center</li>
+            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> info@veldorahotel.com</li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Awards</h3>
+          <div class="awards">
+            <img src="images/award1.png" alt="Award">
+            <img src="images/award2.png" alt="Award">
+            <img src="images/award3.png" alt="Award">
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Veldora Hotels & Resorts. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
